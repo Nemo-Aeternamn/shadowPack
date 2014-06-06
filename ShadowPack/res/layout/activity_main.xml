@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--
+    tools:context="com.theNemos.shadowPack.MainActivity"
+    tools:ignore="MergeRootFrame"
+    -->
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content" >
+
+        <RadioButton
+            android1:id="@+id/radio0"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="RadioButton" />
+
+        <RadioButton
+            android1:id="@+id/radio1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+
+        <RadioButton
+            android1:id="@+id/radio2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+            
+        <RadioButton
+            android1:id="@+id/radio6"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+            
+        <RadioButton
+            android1:id="@+id/radio3"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+            
+        <RadioButton
+            android1:id="@+id/radio4"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+            
+        <RadioButton
+            android1:id="@+id/radio5"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="RadioButton" />
+    </RadioGroup>
+
+</FrameLayout>

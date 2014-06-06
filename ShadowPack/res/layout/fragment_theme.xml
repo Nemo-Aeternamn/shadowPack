@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.theNemos.shadowPack.FagmentTheme"
+    android:id="@+id/ListView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAppearance="@android:attr/textAppearance"
+    android:background="@color/background" 
+    tools:ignore="MergeRootFrame" 
+    >
+    
+    </FrameLayout>

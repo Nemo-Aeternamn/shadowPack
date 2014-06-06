@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Basic theme information -->
+    <string name="app_name">Shadow Pack</string>
+    <string name="theme_title">Shadow Pack</string>
+    <string name="icon_title"></string>
+    <string name="developer_name">The Nemos</string>
+    <string name="pkg">com.theNemos.nemosPack</string>
+    <string name="apply_wallpaper">Apply</string>
+    <string name="go_applied">Theme Applied</string>
+   	
+	<!-- Icon Catergories Tabs -->
+	<string name="icon1">Latest Icons</string>
+    <string name="icon2">System Icons</string>
+    <string name="icon3">Play Icons</string>
+    <string name="icon4">Games Icons</string>
+    <string name="icon5">Misc Icons</string> 
+   
+    <!-- Share Button -->
+    <!-- This is additional text that is attached to your package when sharing the link -->
+    <string name="shareThis">This theme is fucking awesome</string> 
+   
+    <!-- Stock options that will be changed and catagorized later -->
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    
+	<!-- for the tabs.. fucking hell -->
+	<string name="see_more">See More</string>
+</resources>
