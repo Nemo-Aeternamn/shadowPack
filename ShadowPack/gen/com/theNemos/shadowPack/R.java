@@ -184,6 +184,7 @@ public final class R {
         public static final int list_item_tab=0x7f03000a;
         public static final int list_item_tab_compressed=0x7f03000b;
         public static final int list_item_tab_nocontent=0x7f03000c;
+        public static final int nemos_list=0x7f03000d;
     }
     public static final class menu {
         public static final int contact_popup=0x7f090000;
@@ -228,6 +229,10 @@ public final class R {
         public static final int facebook=0x7f07000b;
         public static final int facebook_extra=0x7f07000c;
         public static final int facebook_link=0x7f07000d;
+        /**  Stock options that will be changed and catagorized later 
+         */
+        public static final int fragment_themes=0x7f070027;
+        public static final int fragments_extra=0x7f070028;
         public static final int github=0x7f070046;
         public static final int github_extra=0x7f070047;
         public static final int github_link=0x7f070048;
@@ -293,10 +298,6 @@ public final class R {
         public static final int template_header=0x7f070045;
         public static final int theme_title=0x7f07001b;
         public static final int themeheader=0x7f070050;
-        /**  Stock options that will be changed and catagorized later 
-         */
-        public static final int title_section1=0x7f070027;
-        public static final int title_section2=0x7f070028;
         public static final int title_section3=0x7f070029;
         public static final int twitter=0x7f070008;
         public static final int twitter_extra=0x7f070009;

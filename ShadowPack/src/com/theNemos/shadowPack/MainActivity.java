@@ -1,7 +1,5 @@
 package com.theNemos.shadowPack;
 
-import com.theNemos.shadowPack.fragments.FragmentTheme;
-
 import android.app.Activity;
 import android.app.ActionBar;
 import android.app.Fragment;
@@ -17,9 +15,11 @@ import android.view.ViewGroup;
 import android.view.View.OnCreateContextMenuListener;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import android.support.v4.app.FragmentActivity;
 
 public class MainActivity extends Activity implements
 		ActionBar.OnNavigationListener {
+
 
 	/**
 	 * The serialization (saved instance state) Bundle key representing the
@@ -30,7 +30,7 @@ public class MainActivity extends Activity implements
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.fragment_theme);
 
 		// Set up the action bar to show a dropdown list.
 		final ActionBar actionBar = getActionBar();
@@ -44,8 +44,8 @@ public class MainActivity extends Activity implements
 				new ArrayAdapter<String>(actionBar.getThemedContext(),
 						android.R.layout.simple_list_item_1,
 						new String[] {
-								getString(R.string.title_section1),
-								getString(R.string.title_section2),
+								getString(R.string.fragment_themes),
+								getString(R.string.fragments_extra),
 								getString(R.string.title_section3), }), this);
 	}
 
@@ -91,8 +91,8 @@ public class MainActivity extends Activity implements
 		// container view.
 		getFragmentManager()
 				.beginTransaction()
-				.replace(R.id.container,
-						PlaceholderFragment.newInstance(position + 1)).commit();
+				.replace(R.id.ListView,
+					PlaceholderFragment .newInstance(position + 1)).commit();
 		return true;
 	}
 
@@ -126,7 +126,7 @@ public class MainActivity extends Activity implements
 			View rootView = inflater.inflate(R.layout.fragment_theme, container,
 					false);
 			TextView textView = (TextView) rootView
-					.findViewById(R.id.section_label);
+					.findViewById(R.id.ListView);
 			textView.setText(Integer.toString(getArguments().getInt(
 					ARG_SECTION_NUMBER)));
 			return rootView;

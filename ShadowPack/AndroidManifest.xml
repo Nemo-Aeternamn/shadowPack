@@ -7,13 +7,16 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> 
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:xlargeScreens="true" android:smallScreens="true" android:resizeable="true"/>
 
     <application
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Nemo.A" >
+        android:theme="@style/Nemo.A" 
+        >
         <activity
             android:name="com.theNemos.shadowPack.MainActivity"
             android:label="@string/app_name" >
@@ -23,6 +26,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+                <activity android:name=".ThemeActivity"
+                  android:label="@string/theme_title" >                
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>         
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.gau.go.launcherex.theme" />
+                <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+           	<intent-filter>
+	        	<action android:name="android.intent.action.MAIN" />
+	            <category android:name="com.anddoes.launcher.THEME" />
+	        </intent-filter> 
+	        <intent-filter >
+	        	<action android:name="ginlemon.smartlauncher.THEMES" />
+             
+				<category android:name="android.intent.category.DEFAULT" />   
+             </intent-filter>         
+	    </activity>
         
        <activity android:name=".adw"
 	             android:label="@string/theme_title">
@@ -50,7 +79,31 @@
             </intent-filter>
         </activity>
         
+         <activity android:name=".IconActivity"
+            android:label="@string/app_name">
+                  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         
-    </application>
-
+        <activity android:name=".IconRequest"
+            android:label="@string/app_name">
+                  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>        
+     
+	    <provider
+	        android:name=".iconsProvider"
+	        android:authorities="com.theNemos.nemosPack.iconsProvider" 
+	    />
+	    
+	</application>
+	<!-- This allows UCCW skins to show in the app if you have added them (if this is a paid theme remove as you wont be able to access them, instead use the UCCW card to download) -->
+ 	<meta-data android:name="in.vineetsirohi.uccwtheme" android:value="2" />
+        
 </manifest>
